@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 1</title>
+    </head>
+
+    <body>
+        <h1>Password Validator</h1>
+        <h3>Please enter your password twice to validate it. </h3>
+
+        <div id="form" name="form">
+            <!-- <form onsubmit="return validate()"> -->
+            <!-- <form> -->
+            <label for "password1">Please enter your password: </label> <br>
+            <input type="password" id="password1"> <br> <br>
+
+            <label for "password2">Please re-enter your password: </label> <br>
+            <input type="password" id="password2"> <br> <br>
+
+            <input type="submit" value="Validate" onclick="validate()" id="submit_button">
+
+            <!-- </form> -->
+
+        </div>
+
+        <div>
+            <p id="success"> Success! Password is set. </p>
+        </div>
+
+        <div>
+            <p id="fail" style="color: red"> Passwords do not match. Please try again. </p>
+        </div>
+
+        <div>
+            <p id="short" style="color: red"> Password is under 8 characters long. Please try again. </p>
+        </div>
+
+    </body>
+
+    <script type="text/javascript" src="exercise_1.js"></script>
+
+</html>

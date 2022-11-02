@@ -1,7 +1,7 @@
 
 var image = document.getElementById("pic");
 
-arr = ["images/1_laying.jpg", "images/2_hearts.jpg", "images/3_jumping.jpg", "images/4_barking.jpg", "images/5_dancing.jpg"]
+arr = ["images/1_laying.jpg", "images/2_hearts.jpg", "images/3_headshot.jpg", "images/4_barking.jpg", "images/5_dancing.jpg"]
 
 var counter = 0;
 

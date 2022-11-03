@@ -22,3 +22,8 @@ img {
 h1 {
     text-align: center;
 }
+
+.links-container {
+    width: 50%;
+    float: left;
+}

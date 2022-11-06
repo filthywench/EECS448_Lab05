@@ -6,9 +6,6 @@ arr = ["images/1_laying.jpg", "images/2_hearts.jpg", "images/3_headshot.jpg", "i
 var counter = 0;
 
 function nextImage() {
-    // var image = document.getElementById("pic");
-    // image.src = arr[1];
-
     if(counter==4){
         counter = 0;
     }

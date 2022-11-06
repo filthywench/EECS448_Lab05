@@ -7,10 +7,9 @@
     <body>
         <h1>Password Validator</h1>
         <h3>Please enter your password twice to validate it. </h3>
+        <p><b>RULES: </b>The passwords in each field must match exactly, and must be more than 8 characters long.</p> <br>
 
         <div id="form" name="form">
-            <!-- <form onsubmit="return validate()"> -->
-            <!-- <form> -->
             <label for "password1">Please enter your password: </label> <br>
             <input type="password" id="password1"> <br> <br>
 
@@ -18,13 +17,10 @@
             <input type="password" id="password2"> <br> <br>
 
             <input type="submit" value="Validate" onclick="validate()" id="submit_button">
-
-            <!-- </form> -->
-
         </div>
 
         <div>
-            <p id="success"> Success! Password is set. </p>
+            <p id="success" style="color: green"> Success! Password is set. </p>
         </div>
 
         <div>

@@ -3,28 +3,107 @@
     <head>
         <title>Exercise 3</title>
         <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    </head>
 
     <body>
         <h1 class="header">Jesse Eisenberg</h1>
 
         <div class="image-container">
-            <img src="headshot.jpg">
+            <img src="https://i.guim.co.uk/img/media/4546dc694fce7221e1e239d4f08fb97c585295ea/0_391_3280_1968/master/3280.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e5c71b2bf9dea9ffe557757730abbcb9">
         </div>
 
         <div class="bio-container">
-            <p id="bio">Hi there! My name is Jesse Eisenberg. I am an oscar-nominated actor and have also been in the running for two BAFTA awards, two Golden Globes, and more. I'm most well-known for my roles in the Social Network, Now You See Me, Zombieland, and many others. My birthday is October 5th, 1983. </p>  
-            <p><b>FUN FACT: </b>My 37th birthday was celebrated in Self Hall by two students at the University of Kansas, where strawberry cheesecake was eaten at 9:00 AM while my favorite song played in the background.</p>
+            <p id="bio">Hi there, my name is Jesse Eisenberg! I am an oscar-nominated actor and have also been in the running for two BAFTA awards, two Golden Globes, and more. I'm most well-known for my roles in the Social Network, Now You See Me, Zombieland, and many others. I was born in Queens, NY, and my birthday is October 5th, 1983. </p>  
         </div>
         <br>
-        <div class="links-container">
-            <h4>Visit these websites to learn more about some of my favorite movies I've starred in. </h4>
-            <a href="https://www.imdb.com/title/tt1285016/">The Social Network</a> 
-            <a href="https://www.imdb.com/title/tt1670345/">Now You See Me</a> <br>
-            <a href="https://www.imdb.com/title/tt1156398/">Zombieland</a> <br>
-            <a href="https://www.imdb.com/title/tt8368406/">Vivarium</a>
+        <div class="row">
+            <div class="movie-links-container">
+                <h2 class="movie-links-header" style="background-color: #51bbad">Click these links to learn more about some of my favorite movies I've starred in. </h2>
+                <div class="row">
+                    <div class="col1">
+                        <a class="links-class" href="https://www.imdb.com/title/tt1285016/">The Social Network</a> <br> <br>
+                        <a class="links-class" href="https://www.imdb.com/title/tt1670345/">Now You See Me</a> <br> <br>
+                        <a class="links-class" href="https://www.imdb.com/title/tt3110958/">Now You See Me 2</a> <br> <br>
+                        <a class="links-class" href="https://www.imdb.com/title/tt1156398/">Zombieland</a> <br> <br>
+                        <a class="links-class" href="https://www.imdb.com/title/tt1560220/">Zombieland: Double Tap</a> <br> <br>
+                        <a class="links-class" href="https://www.imdb.com/title/tt8368406/">Vivarium</a> <br> <br>
+                        <a class="links-class" href="https://www.imdb.com/title/tt1622547/">30 Minutes or Less</a>
+                    </div> 
+                    <div class="col2">
+                        <a class="links-class" href="https://www.imdb.com/title/tt1091722/">Adventureland</a> <br> <br>
+                        <a class="links-class" href="https://www.imdb.com/title/tt1436562/">Rio</a> <br> <br>
+                        <a class="links-class" href="https://www.imdb.com/title/tt2357291/">Rio 2</a> <br> <br>
+                        <a class="links-class" href="https://www.imdb.com/title/tt0257516/">Cursed</a> <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="youtube-container">
+                <h2 class="youtube-header" style="background-color: #51bbad">Watch one of my favorite interviews (I was feeling fiesty that day):</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6AU2TaP4UGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
         </div>
 
+        <div class="row2">
+            <div class="websites-links-container">
+                <h2 style="background-color: #51bbad">Visit some of my favorite webistes: </h2> 
+                <ul>
+                    <li><a class="links-class" href="https://www.wikihow.com/Do-Magic-Tricks">How to do Magic Tricks</a> </li> <br> <br>
+                    <li><a class="links-class" href="https://www.merriam-webster.com/dictionary/sarcasm">Sarcasm Definition</a> </li> <br> <br>
+                    <li><a class="links-class" href="https://ween.com/music">ween.com</a></li> <br> <br>
+                    <li><a class="links-class" href="https://childmind.org/myyoungerself/">#MyYoungerSelf Project</a></li> <br> <br>
+                    <li><a class="links-class" href="https://www.nba.com/pacers">Indiana Pacers</a></li> <br> <br>
+                    <li><a class="links-class" href="http://oneupme.com/">OneUpMe</a></li> <br> <br>
+                    <li><a class="links-class" href="https://kab.org/">Keep America Beautiful</a></li>
+                </ul>
+            </div>
+
+            <div class="fun-fact-container">
+                <h2 style="background-color: #51bbad">Fun Facts</h2>
+                <h3 class="fun-fact-description">Click each of the icons for a fun fact about me. </h3>
+                
+                <div class="icon-container">
+                    <i class="fa fa-male fa-3x" aria-hidden="true" onclick="displayMichaelFact()">&emsp;</i>
+                    <i class="fa fa-birthday-cake fa-3x" aria-hidden="true" onclick="displayCakeFact()">&emsp;</i>
+                    <i class="fa fa-television fa-3x" aria-hidden="true" onclick="displaySisterFact()">&emsp;</i>
+                    <i class="fa fa-microphone fa-3x" aria-hidden="true" onclick="displaySNLFact()">&emsp;</i>
+                    <i class="fa fa-facebook-official fa-3x" aria-hidden="true" onclick="displayFBFact()">&emsp;</i>
+                    <i class="fa fa-music fa-3x" aria-hidden="true" onclick="displayWeenFact()"></i>
+                </div>
+                
+                <div id="michaelFact">
+                    <p>&nbsp;I am often mistaken for Michael Cera (left).</p>
+                    <img class="widePic" src="http://cdn.justjared.com/wp-content/uploads/headlines/2019/03/jesse-michael.jpg">
+                </div>
+
+                <div id="cakeFact">
+                    <p>&nbsp;My 37th birthday was celebrated by two students at the University of Kansas in a dorm room in Self Hall. They ate strawberry cheesecake at 10:00 AM while my favorite song played in the background.</p>
+                    <img src="images/birthday.jpg">
+                </div>
+
+                <div id="sisterFact">
+                    <p>&nbsp;My younger sister used to act as well, starring in old Pepsi commercials and movies How to Eat Fried Worms & Paulie.</p>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTYwNTYzOTY1M15BMl5BanBnXkFtZTcwNjQzNjQ0NA@@._V1_.jpg">
+                </div>
+
+                <div id="SNLFact">
+                    <p>&nbsp;I hosted SNL on January 29, 2011. The picture below was taken during my monologue, with Mark Zuckerberg, who I played in The Social Network, along with me (center) and Andy Samberg (right).</p>
+                    <img class="widePic" src="https://mediaproxy.salon.com/width/1200/height/675/https://media.salon.com/2011/01/mark_zuckerberg_confronts_jesse_eisenberg_on_snl.jpg">
+                </div>
+
+                <div id="FBFact">
+                    <p>&nbsp;Before I was cast to place Mark Zuckerberg in The Social Network, I had never even seen a Facebook page.</p>
+                    <img class="widePic" src="https://images.indianexpress.com/2021/10/jessi-eisenberg-1200.jpg">
+                </div>
+
+                <div id="weenFact">
+                    <p>&nbsp;I also love music, especially musical theater. I've been playing the drums since I was eight years old, and my favorite band is Ween!</p>
+                    <img class="widePic" src="https://www.cinema.de/sites/default/files/styles/cin_landscape_510/public/sync/cms3.cinema.de/imgdb/import/dreams2/1002/870/2/1002870262.jpg?h=167c6200&itok=zrNJArC8">
+                </div>
+
+            </div>
+        </div>
     </body>
 
     <script type="text/javascript" src="exercise_3.js"></script>

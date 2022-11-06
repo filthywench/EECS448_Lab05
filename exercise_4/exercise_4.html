@@ -7,8 +7,11 @@
 
     <body>
         <h1>CSS Manipulator</h1>
+        <p>In the fields below, enter color codes to change the background and border colors of the poem. <br>
+            For reference, black occurs when red, green, and blue all equal 0, and white occurs when red, green, and blue all equal 255. <br>
+            <b>NOTE: </b>Border value must be increased before the border becomes visible.<p>
         <div>
-            <p id="paragraph">According to all known laws of aviation, <br>
+            <p class="poem" id="paragraph"><br>According to all known laws of aviation, <br>
                 there is no way a bee <br>
                 should be able to fly. <br>
                 <br>
@@ -20,32 +23,29 @@
                 because bees don't care <br>
                 what humans think is impossible. <br>
                 <br>
-                  
-                Yellow, black. Yellow, black. <br>
-                Yellow, black. Yellow, black. <br>
                 </p>
         </div>
 
         <div>
             <h3>Border</h3>
             <label for="border_red">Red value(0-255): </label>
-            <input type="text" id="border_red"> <br>
+            <input type="text" id="border_red" value="255"> <br>
             <label for="border_green">Green value(0-255): </label>
-            <input type="text" id="border_green"> <br>
+            <input type="text" id="border_green" value="255"> <br>
             <label for="border_blue">Blue value(0-255): </label>
-            <input type="text" id="border_blue"> <br>
-            <label for="border_width">Width: </label>
-            <input type="text" id="border_width"> <br>
+            <input type="text" id="border_blue" value="255"> <br>
+            <label for="border_width">Width (in px): </label>
+            <input type="text" id="border_width" value="0"> <br>
         </div>
         <br>
         <div>
             <h3>Background Color</h3>
             <label for="bg_red">Red value(0-225): </label>
-            <input type="text" id="bg_red"> <br>
+            <input type="text" id="bg_red" value="255"> <br>
             <label for="bg_green">Green value(0-225): </label>
-            <input type="text" id="bg_green"> <br>
+            <input type="text" id="bg_green" value="255"> <br>
             <label for="bg_blue">Blue value(0-225): </label>
-            <input type="text" id="bg_blue"> <br>
+            <input type="text" id="bg_blue" value="255"> <br>
         </div>
         <br>
         <button id="update" onclick="update()">Update page</button>

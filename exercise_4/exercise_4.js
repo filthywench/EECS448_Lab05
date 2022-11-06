@@ -12,12 +12,18 @@ var bg_blue = document.getElementById("bg_blue");
 
 function update() {
 
-    // if(bg_red.value<=70 && bg_green.value<=70 && bg_blue<=70) {
-    //     //font color = white
-    //     paragraph.style.color = "rgb(255, 255, 255)";
-    // }
-    paragraph.style.backgroundColor ="rgb("+bg_red.value+", "+bg_green.value+", "+bg_blue.value+")";
-    paragraph.style.border = border_width.value + "px solid rgb(" + border_red.value + ", " + border_green.value + ", " + border_blue.value + ")";
-
-   
+    if(bg_red.value<=70 && bg_green.value<=70 && bg_blue.value<=70) {
+        //font color = white if background is dark
+        paragraph.style.color = "rgb(255, 255, 255)";
+    }
+    else {
+        paragraph.style.color = "rgb(0, 0, 0)";
+    }
+    if(border_red.value>255 || border_red.value<0 || border_green.value>255 || border_green.value<0 || border_blue.value>255 || border_blue.value<0 || bg_red.value>255 || bg_red.value<0 || bg_green.value>255 ||bg_green.value<0 || bg_blue.value>255 || bg_blue.value<0) {
+        alert("Color codes must be between 0 & 255.")
+    }
+    else {
+        paragraph.style.backgroundColor ="rgb("+bg_red.value+", "+bg_green.value+", "+bg_blue.value+")";
+        paragraph.style.border = border_width.value + "px solid rgb(" + border_red.value + ", " + border_green.value + ", " + border_blue.value + ")";
+    } 
 }

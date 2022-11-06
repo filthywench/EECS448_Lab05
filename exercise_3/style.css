@@ -1,5 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(https://i.pinimg.com/originals/75/dd/14/75dd14cdd96daff205a49d72abbc11ef.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 img {
@@ -11,19 +15,87 @@ img {
     display: block;
 }
 
+.widePic {
+    width: 500px;
+}
+
 .bio-container {
-    width: 800px;
+    width: 1000px;
+    font-size: 1.25em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-h1 {
+.movie-links-container {
+    float: left;
+    background-color: #ededed;
+    margin: 3px;
+    border: 5px solid #ededed;
+    
+}
+
+.websites-links-container {
+    float: left;
+    background-color: #ededed;
+    margin: 3px;
+    border: 5px solid #ededed;
+}
+
+.youtube-container {
+    float: right;
+    background-color: #ededed;
+    margin: 3px;
+    border: 5px solid #ededed;
     text-align: center;
 }
 
-.links-container {
-    width: 50%;
-    float: left;
+.fun-fact-container {
+    background-color: #ededed;
+    margin: 3px;
+    border: 5px solid #ededed;
 }
+
+.icon-container {
+    text-align: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+.col2 {
+    float: right;
+}
+
+.links-class {
+    font-size: 1.5em;
+    color:black;
+}
+
+.fa {
+    color:#51bbad;
+}
+
+.links-class:hover {
+    color: blue;
+}
+
+.header {
+    font-size: 3em;
+    background-color: #ededed;
+    text-align: center;
+}
+
+/* dark-teal: #01ab9d
+dark-gray: #c0beb6
+light-teal: #51bbad
+dark-teal: #ededed */
